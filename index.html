@@ -15,39 +15,34 @@
     <!--header should go up here-->
 <form class="info" action="index.html" method="post">
   <fieldset>
-    <label id="fname">
-      First name:<input id="go" type="text" name="firstName" size="25" maxlength="30">
-    </label>
-
-
 
     <!-- Applicant first name -->
     <label id="fname">
-      First name:<input id="go" type="text" name="firstName" size="25" maxlength="30">
+      First Name:<input id="go" type="text" name="firstName" size="25" maxlength="30">
     </label>
 
 
     <!-- Applicant middle initial -->
-    <label id="fname">
-      First name:<input type="text" name="firstName" size="25" maxlength="30">
+    <label id="midI">
+      Middle Initial:<input type="text" name="midInt" size="25" maxlength="30">
     </label>
 
 
     <!-- Applicant last name -->
 
-    <label id="fname">
-      First name:<input type="text" name="firstName" size="25" maxlength="30">
+    <label id="lname">
+      Last Name:<input type="text" name="lastName" size="25" maxlength="30">
     </label>
 
     <!-- Applicant address -->
-    <label id="fname">
-      First name:<input type="text" name="firstName" size="25" maxlength="30">
+    <label id="address">
+      Address:<input type="text" name="address" size="25" maxlength="30">
     </label>
 
 
     <!-- Applicant occupation -->
 
-    <label id="fname">
+    <label id="job">
       Occupation:<select name="occupation">
         <optgroup label="job">
           <option value="saleryman">Saleryman</option>
@@ -64,20 +59,20 @@
 
 
     <!-- Applicant employer -->
-    <label id="fname">
-      First name:<input type="text" name="firstName" size="25" maxlength="30">
+    <label id="boss">
+      Employer:<input type="text" name="boss" size="25" maxlength="30">
     </label>
 
 
     <!-- Employer address -->
-    <label id="fname">
-      First name:<input type="text" name="firstName" size="25" maxlength="30">
+    <label id="bossAdd">
+      Employer Address:<input type="text" name="bossAdd" size="25" maxlength="30">
     </label>
 
 
   </fieldset>
   <fieldset>
-<!-------
+<!--
     Type of loan select element with these options:
 
         Commercial
@@ -86,7 +81,18 @@
 
         Personal
 
-        Mortgage
+        Mortgage -->
+
+    <label id="loan">
+      Type of Loan:<select name="loanType">
+          <option value="commer">Commercial</option>
+          <option value="realEstate">Real Estate</option>
+          <option value="person">Personal</option>
+          <option value="mort">Mortgage</option>
+        </select>
+    </label>
+
+<!-------
 
     Requested amount of loan
 
