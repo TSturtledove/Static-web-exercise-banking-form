@@ -10,35 +10,69 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
+
+    <h1>Welcome to McDuck loans</h1>
     <!--header should go up here-->
 <form class="info" action="index.html" method="post">
   <fieldset>
 
-
-<!--
-    Applicant first name
-
-
-    Applicant middle initial
+    <!-- Applicant first name -->
+    <label id="fname">
+      First Name:<input id="go" type="text" name="firstName" size="25" maxlength="30">
+    </label>
 
 
-    Applicant last name
+    <!-- Applicant middle initial -->
+    <label id="midI">
+      Middle Initial:<input type="text" name="midInt" size="25" maxlength="30">
+    </label>
 
 
-    Applicant address
+    <!-- Applicant last name -->
+
+    <label id="lname">
+      Last Name:<input type="text" name="lastName" size="25" maxlength="30">
+    </label>
+
+    <!-- Applicant address -->
+    <label id="address">
+      Address:<input type="text" name="address" size="25" maxlength="30">
+    </label>
 
 
-    Applicant occupation
+    <!-- Applicant occupation -->
+
+    <label id="job">
+      Occupation:<select name="occupation">
+        <optgroup label="job">
+          <option value="saleryman">Saleryman</option>
+          <option value="engin">Engineer</option>
+          <option value="teacher">Teacher</option>
+          <option value="dr">Doctor</option>
+          <option value="student">Student</option>
+          <option value="ret">Retired</option>
+          <option value="unploy">Unemployed</option>
+        </optgroup>
+        </select>
+    </label>
 
 
-    Applicant employer
+
+    <!-- Applicant employer -->
+    <label id="boss">
+      Employer:<input type="text" name="boss" size="25" maxlength="30">
+    </label>
 
 
-    Employer address
-  -->
+    <!-- Employer address -->
+    <label id="bossAdd">
+      Employer Address:<input type="text" name="bossAdd" size="25" maxlength="30">
+    </label>
+
+
   </fieldset>
   <fieldset>
-<!-------
+<!--
     Type of loan select element with these options:
 
         Commercial
@@ -47,7 +81,18 @@
 
         Personal
 
-        Mortgage
+        Mortgage -->
+
+    <label id="loan">
+      Type of Loan:<select name="loanType">
+          <option value="commer">Commercial</option>
+          <option value="realEstate">Real Estate</option>
+          <option value="person">Personal</option>
+          <option value="mort">Mortgage</option>
+        </select>
+    </label>
+
+<!-------
 
     Requested amount of loan
 

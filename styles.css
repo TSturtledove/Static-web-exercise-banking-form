@@ -1,10 +1,42 @@
 
 body {
-  background-color: #afe;
+  background-color: #9ae59a;
   font-size: 1rem;
   font-family: Verdana, Geneva, sans-serif;
+  /*display: flex;*/
+
 }
 
+h1 {
+  display: block;
+}
+form {
+  /*display: -webkit-flex;*/
+  display: flex;
+  /*-webkit-flex-direction: column;*/
+  flex-direction: column;
+  /*-webkit-flex-justify-content: center;*/
+  justify-content: center;
+
+}
+
+
+
+fieldset {
+  /*display: -webkit-flex;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+
+label {
+  align-self: center;
+  padding: 3px;
+  margin: 2px;
+}
 
 
 .footer {
@@ -12,4 +44,12 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   padding-top: 3rem;
+}
+
+#fname {
+
+}
+
+#go {
+  color: black;
 }
