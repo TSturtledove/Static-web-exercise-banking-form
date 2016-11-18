@@ -7,9 +7,15 @@ body {
 
 }
 
+h1 {
+  display: block;
+}
 form {
+  /*display: -webkit-flex;*/
   display: flex;
+  /*-webkit-flex-direction: column;*/
   flex-direction: column;
+  /*-webkit-flex-justify-content: center;*/
   justify-content: center;
 
 }
@@ -17,6 +23,7 @@ form {
 
 
 fieldset {
+  /*display: -webkit-flex;*/
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -26,6 +33,7 @@ fieldset {
 
 
 label {
+  align-self: center;
   padding: 3px;
   margin: 2px;
 }
@@ -39,7 +47,7 @@ label {
 }
 
 #fname {
-  color: #aa2564;
+
 }
 
 #go {
