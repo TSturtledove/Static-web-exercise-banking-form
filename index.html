@@ -15,6 +15,7 @@
     <!--header should go up here-->
 <form class="info" action="index.html" method="post">
   <fieldset>
+    <legend>Personal Information</legend>
 
     <!-- Applicant first name -->
     <label id="fname">
@@ -36,7 +37,7 @@
 
     <!-- Applicant address -->
     <label id="address">
-      Address:<input type="text" name="address" size="25" maxlength="30">
+      Address:<input type="text" name="address" size="25" maxlength="50">
     </label>
 
 
@@ -60,18 +61,21 @@
 
     <!-- Applicant employer -->
     <label id="boss">
-      Employer:<input type="text" name="boss" size="25" maxlength="30">
+      Employer:<input type="text" name="boss" size="25" maxlength="40">
     </label>
 
 
     <!-- Employer address -->
     <label id="bossAdd">
-      Employer Address:<input type="text" name="bossAdd" size="25" maxlength="30">
+      Employer Address:<input type="text" name="bossAdd" size="25" maxlength="70">
     </label>
 
 
   </fieldset>
   <fieldset>
+    <legend>Loan Information</legend>
+
+
 <!--
     Type of loan select element with these options:
 
@@ -92,11 +96,14 @@
         </select>
     </label>
 
-<!-------
+<!--
 
     Requested amount of loan
-
-
+-->
+  <label id="amount">
+  Amount of Loan:<input type="number">
+  </label>
+<!--
     Radio button elements for loan length
 
 
@@ -104,10 +111,14 @@
 
         15 years
 
-        30 years
------->
-  </fieldset>
-  <fieldset>
+        30 years -->
+<label id="len">
+  Length of Loan:<input type="radio" name="loanLen" value="5" checked="checked"> 5 years
+  <input type="radio" name="loanLen" value="15"> 15 years
+  <input type="radio" name="loanLen" value="30"> 30 years
+</label>
+
+
     <!--
     Checkbox group for special conditions
 
@@ -119,13 +130,52 @@
 
         Loan will be co-signed
 
+-->
+    <label id="spCon">
+      Special Conditions (select all that apply):<input type="checkbox" name="specCon" value="downPay"> I have a down payment
+      <input type="checkbox" name="specCon" value="outSate"> Out-of-State resident
+      <input type="checkbox" name="specCon" value="marrd"> Married
+      <input type="checkbox" name="specCon" value="coSign"> Loan will be Co-Signed
+    </label>
+<!--
     A text area to allow for additional comments
+-->
 
+<label id="comm">
+  Add any additional comments:<textarea name="comments" rows="5" columns="40"></textarea>
+  </label>
+
+
+    </fieldset>
+    <fieldset>
+      <legend>Contact Information</legend>
+
+
+<!--
     Applicant email address
+-->
+<label id="email">
+  Email:<input type="email" name="email" size="25" maxlength="30">
+</label>
 
+<!--
     Applicant telephone number
+-->
+<label id="telNum">
+  Telephone Number:<input type="text" name="tele" size="14" maxlength="20">
+</label>
 
+
+<!--
     Applicant LinkedIn URL -->
+<label id="linkLink">
+LinkedIn URL:<input type="url" name="linked">
+</label>
+
+
+  <input type="submit" value="Submit Application">
+
+
 </fieldset>
 
 
