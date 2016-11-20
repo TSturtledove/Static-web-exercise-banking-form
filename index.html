@@ -18,33 +18,29 @@
     <legend>Personal Information</legend>
 
     <!-- Applicant first name -->
-    <label id="fname">
-      First Name:<input id="go" type="text" name="firstName" size="25" maxlength="30">
-    </label>
+    <label id="fname">First Name:</label>
+      <input id="go" type="text" name="firstName" size="25" maxlength="30">
 
 
     <!-- Applicant middle initial -->
-    <label id="midI">
-      Middle Initial:<input type="text" name="midInt" size="25" maxlength="30">
-    </label>
+    <label id="midI">Middle Initial:</label>
+    <input type="text" name="midInt" size="25" maxlength="30">
 
 
     <!-- Applicant last name -->
 
-    <label id="lname">
-      Last Name:<input type="text" name="lastName" size="25" maxlength="30">
-    </label>
+    <label id="lname">Last Name:</label>
+    <input type="text" name="lastName" size="25" maxlength="30">
 
     <!-- Applicant address -->
-    <label id="address">
-      Address:<input type="text" name="address" size="25" maxlength="50">
-    </label>
+    <label id="address">Address:</label>
+    <input type="text" name="address" size="25" maxlength="50">
 
 
     <!-- Applicant occupation -->
 
-    <label id="job">
-      Occupation:<select name="occupation">
+    <label id="job">Occupation:</label>
+    <select name="occupation">
         <optgroup label="job">
           <option value="saleryman">Saleryman</option>
           <option value="engin">Engineer</option>
@@ -55,20 +51,17 @@
           <option value="unploy">Unemployed</option>
         </optgroup>
         </select>
-    </label>
 
 
 
     <!-- Applicant employer -->
-    <label id="boss">
-      Employer:<input type="text" name="boss" size="25" maxlength="40">
-    </label>
+    <label id="boss">Employer:</label>
+    <input type="text" name="boss" size="25" maxlength="40">
 
 
     <!-- Employer address -->
-    <label id="bossAdd">
-      Employer Address:<input type="text" name="bossAdd" size="25" maxlength="70">
-    </label>
+    <label id="bossAdd">Employer Address:</label>
+    <input type="text" name="bossAdd" size="25" maxlength="70">
 
 
   </fieldset>
@@ -87,23 +80,21 @@
 
         Mortgage -->
 
-    <label id="loan">
-      Type of Loan:<select name="loanType">
+    <label id="loan">Type of Loan:</label>
+    <select name="loanType">
           <option value="commer">Commercial</option>
           <option value="realEstate">Real Estate</option>
           <option value="person">Personal</option>
           <option value="mort">Mortgage</option>
         </select>
-    </label>
 
 <!--
 
     Requested amount of loan
 -->
-  <label id="amount">
-  Amount of Loan:<input type="number">
-  </label>
-<!--
+  <label id="amount">Amount of Loan:</label>
+  <input type="number">
+  <!--
     Radio button elements for loan length
 
 
@@ -112,11 +103,10 @@
         15 years
 
         30 years -->
-<label id="len">
-  Length of Loan:<input type="radio" name="loanLen" value="5" checked="checked"> 5 years
+<label id="len">Length of Loan:</label>
+<input type="radio" name="loanLen" value="5" checked="checked"> 5 years
   <input type="radio" name="loanLen" value="15"> 15 years
   <input type="radio" name="loanLen" value="30"> 30 years
-</label>
 
 
     <!--
@@ -131,19 +121,17 @@
         Loan will be co-signed
 
 -->
-    <label id="spCon">
-      Special Conditions (select all that apply):<input type="checkbox" name="specCon" value="downPay"> I have a down payment
+    <label id="spCon">Special Conditions (select all that apply):</label>
+      <input type="checkbox" name="specCon" value="downPay"> I have a down payment
       <input type="checkbox" name="specCon" value="outSate"> Out-of-State resident
       <input type="checkbox" name="specCon" value="marrd"> Married
       <input type="checkbox" name="specCon" value="coSign"> Loan will be Co-Signed
-    </label>
 <!--
     A text area to allow for additional comments
 -->
 
-<label id="comm">
-  Add any additional comments:<textarea name="comments" rows="5" columns="40"></textarea>
-  </label>
+<label id="comm">Add any additional comments:</label>
+<textarea name="comments" rows="5" columns="40"></textarea>
 
 
     </fieldset>
@@ -154,23 +142,20 @@
 <!--
     Applicant email address
 -->
-<label id="email">
-  Email:<input type="email" name="email" size="25" maxlength="30">
-</label>
+<label id="email">Email:</label>
+<input type="email" name="email" size="25" maxlength="30">
 
 <!--
     Applicant telephone number
 -->
-<label id="telNum">
-  Telephone Number:<input type="text" name="tele" size="14" maxlength="20">
-</label>
+<label id="telNum">Telephone Number:</label>
+<input type="text" name="tele" size="14" maxlength="20">
 
 
 <!--
     Applicant LinkedIn URL -->
-<label id="linkLink">
-LinkedIn URL:<input type="url" name="linked">
-</label>
+<label id="linkLink">LinkedIn URL:</label>
+<input type="url" name="linked">
 
 
   <input type="submit" value="Submit Application">
