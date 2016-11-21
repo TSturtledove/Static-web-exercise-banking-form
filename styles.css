@@ -28,6 +28,7 @@ fieldset {
   /*These are the important ones*/
   flex-direction: column;
   flex-wrap: wrap;
+  width: 65%;
 }
 
 
@@ -39,6 +40,22 @@ label {
     justify-content: center;
 }
 
+input {
+  margin-top: 5px;
+  /*display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto;*/
+}
+
+div {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 5px;
+
+}
 /*
 label {
   align-self: center;
