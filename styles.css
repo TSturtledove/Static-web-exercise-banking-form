@@ -9,13 +9,11 @@ body {
 
 h1 {
   display: block;
+  text-align: center;
 }
 form {
-  /*display: -webkit-flex;*/
   display: flex;
-  /*-webkit-flex-direction: column;*/
   flex-direction: column;
-  /*-webkit-flex-justify-content: center;*/
   justify-content: center;
 
 }
@@ -23,20 +21,47 @@ form {
 
 
 fieldset {
-  /*display: -webkit-flex;*/
+  /*These are the important ones*/
   display: flex;
-  align-items: center;
+  align-self: center;
+  justify-content: center;
+  /*These are the important ones*/
   flex-direction: column;
   flex-wrap: wrap;
+  width: 65%;
 }
 
 
+label {
+    align-self: center;
+    padding: 3px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+}
 
+input {
+  margin-top: 5px;
+  /*display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto;*/
+}
+
+div {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 5px;
+
+}
+/*
 label {
   align-self: center;
   padding: 3px;
   margin: 2px;
-}
+}*/
 
 
 .footer {
